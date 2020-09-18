@@ -187,9 +187,10 @@ body {
           outline: none;
           cursor: pointer;
           /*for IE*/ }
-          @media screen and (-ms-high-contrast: active), (-ms-high-contrast: none) {
-            body header article nav .bot1, body header article nav .bot2 {
-              font-size: 14px; } }
+          @media not all and (min-resolution: 0.001dpcm) {
+            @supports (-webkit-appearance: none) {
+              body header article nav .bot1, body header article nav .bot2 {
+                font-size: 12px; } } }
         body header article nav .bot1 {
           background: -webkit-gradient(linear, left top, left bottom, from(#ff7a29), color-stop(50%, #ffa044), color-stop(50%, #ff7a29));
           background: -webkit-linear-gradient(top, #ff7a29, #ffa044 50%, #ff7a29 50%);

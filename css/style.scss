@@ -184,9 +184,9 @@ body {
                 outline: none;
                 cursor: pointer;
                 /*for IE*/
-                @media screen and (-ms-high-contrast: active),(-ms-high-contrast: none){
-                    font-size: 14px;
-            }
+                @media not all and (min-resolution:.001dpcm){ @supports (-webkit-appearance:none){
+                    font-size: 12px;
+                }}
             }
             .bot1{
                 background: linear-gradient(to bottom,#ff7a29,#ffa044 50%,#ff7a29 50%);
