@@ -111,7 +111,7 @@ body {
         margin: 0px auto;
         float: left;
         position: relative;
-        background-color: hotpink; }
+        background-color: powderblue; }
         body header article ul::after {
           position: absolute;
           content: "";
