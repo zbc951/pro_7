@@ -120,7 +120,8 @@ body {
           background: url("../images/topbg.png");
           background-size: cover;
           left: -57px;
-          z-index: -5; }
+          z-index: -5;
+          margin-top: 50px; }
         body header article ul li {
           display: inline-block;
           width: 76px;
@@ -184,9 +185,6 @@ body {
           outline: none;
           cursor: pointer;
           /*for IE*/ }
-          @media all and (-webkit-min-device-pixel-ratio: 0) {
-            body header article nav .bot1, body header article nav .bot2 {
-              font-size: 14px; } }
           @media screen and (-ms-high-contrast: active), (-ms-high-contrast: none) {
             body header article nav .bot1, body header article nav .bot2 {
               font-size: 14px; } }
