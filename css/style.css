@@ -120,10 +120,6 @@ body {
           background-size: cover;
           left: -57px;
           z-index: -5; }
-          @media not all and (min-resolution: 0.001dpcm) {
-            @supports (-webkit-appearance: none) {
-              body header article ul::after {
-                margin-top: 0px; } } }
         body header article ul li {
           display: inline-block;
           width: 76px;
@@ -186,7 +182,11 @@ body {
           font-size: 16px;
           outline: none;
           cursor: pointer;
-          /*for IE*/ }
+          /*for IE*/
+          /*for Safari*/ }
+          @media screen and (-ms-high-contrast: active), (-ms-high-contrast: none) {
+            body header article nav .bot1, body header article nav .bot2 {
+              font-size: 14px; } }
           @media not all and (min-resolution: 0.001dpcm) {
             @supports (-webkit-appearance: none) {
               body header article nav .bot1, body header article nav .bot2 {
