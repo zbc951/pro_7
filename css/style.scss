@@ -1,0 +1,790 @@
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+
+html,body,div,span,applet,object,iframe,h1,h2,h3,h4,h5,h6,p,blockquote,pre,a,abbr,acronym,address,big,cite,code,del,dfn,em,img,ins,kbd,q,s,samp,small,strike,strong,sub,sup,tt,var,b,u,i,
+center,dl,dt,dd,ol,ul,li,fieldset,form,label,legend,table,caption,tbody,tfoot,thead,tr,th,td,article,aside,canvas,details,embed,figure,figcaption,footer,header,hgroup,menu,nav,output,ruby,section,summary,time,mark,audio,video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article,aside,details,figcaption,figure,footer,header,hgroup,menu,nav,section {
+  display: block;
+}
+body {
+  line-height: 1;
+}
+ol,ul {
+  list-style: none;
+}
+blockquote,q {
+  quotes: none;
+}
+blockquote:before,blockquote:after,q:before,q:after {
+  content: "";
+  content: none;
+}
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+    /*main*/
+html{
+    font-family: "微軟正黑體";
+    background: white;
+    box-sizing: border-box;
+    margin: 0px auto;
+}
+a:link{
+    text-decoration: none;
+}
+body {
+    /*public*/
+    article {
+        width: 1200px;
+        height: 100%;
+        margin: 0px auto;        
+    }
+    .bg{
+        width: 100%;
+        height: 1000px;
+        background: url('../images/bg.jpg') no-repeat top center;
+        position: fixed;
+        background-size: cover;
+        top: 140px;
+        z-index: -999;
+    }
+    /*header*/
+    header{
+        width: 100%;
+        height: 100px;
+        box-shadow: 0px 1px 5px gray;
+        background: linear-gradient(to top,#e4e4e6 0%,#d8d9d9 39%,#edeeef 39%);
+        background-size: 100%;
+        background-repeat: no-repeat;
+        position: fixed;
+        z-index: 101;
+        /*for IE*/
+        @media screen and (-ms-high-contrast: active),(-ms-high-contrast: none){
+            background: linear-gradient(to top,#e4e4e6 0%,#d8d9d9 39%,#edeeef 39%);
+        }
+    /*時間*/
+    .time{
+        height: 20px;
+        background: #2b2f36;
+        color: #b6b6b6;
+        font-size: 12px;
+        span{
+            margin: 4px 0px 0px 0px;
+            float: right;
+        }
+    }
+/*主條目*/
+    article{
+        height: 80px;
+        /*LOGO*/
+        .logo{  
+            width: 200px;
+            height: 80px;
+            float: left;
+            position: relative;
+            z-index: 2;
+            background-color: rgba(0,0,0,0.1);
+        }
+        /*上選單*/
+        ul{
+            width: 565px;
+            height: 80px;
+            margin: 0px auto;
+            float: left;
+            position: relative;
+            &::after{
+                position: absolute;
+                content: "";
+                width: 2600px;
+                height: 80px;
+                background: url('../images/topbg.png');
+                background-size: cover;
+                left: -57px;
+                z-index: -5;
+            }
+            li{
+                display: inline-block;
+                width: 76px;
+                height: 40px;
+                text-align: center;
+                border-left: solid 1px #52d2e3;
+                margin: 20px 0px 0px 0px;
+                a{
+                    display: block;
+                    width: 80px;
+                    height: 77px;
+                    border-bottom: solid 3px transparent;
+                    line-height: 77px;
+                    color: white;
+                    font-size: 16px;
+                    margin: -20px 0px 0px 0px;
+                }
+                a:hover{
+                    box-shadow: 0px 1px 10px rgb(63, 63, 63) inset;
+                    background: linear-gradient(to top,#1dd8de,#0084a5);
+                    border-bottom: solid 3px #fff02d;
+                    color: yellow;
+                }
+            }
+        }
+        /*帳號密碼*/
+        nav{
+            width: 375px;
+            height: 80px;
+            float: right;
+            position: relative;
+            z-index: 50;
+            span,input{
+                float: right;
+            }
+            input{
+                margin: 8px 0px 0px 0px;
+                width: 135px;
+                height: 19px;
+                border-radius: 3px;
+                border: solid 1px rgb(145, 145, 145);
+                outline: none;
+                padding: 3px 0px 3px 5px;
+                font-size: 14px;
+            }
+            span{
+                margin: 13px 5px 0px 5px;
+                font-size: 17px;
+                color: white;
+                font-weight: 520;
+                &:last-child{
+                    margin: 15px 5px 0px 5px;
+                    font-size: 14px;
+                }
+            }
+            .bot1,.bot2{
+                display: block;
+                width: 48px;
+                height: 26px;
+                background: coral;
+                float: right;
+                text-align: center;
+                margin: 8px 0px 0px 5px;
+                line-height: 24px;
+                font-size: 16px;
+                outline: none;
+                cursor: pointer;
+                /*for IE*/
+                @media screen and (-ms-high-contrast: active),(-ms-high-contrast: none){
+                    font-size: 14px;
+            }
+            }
+            .bot1{
+                background: linear-gradient(to bottom,#ff7a29,#ffa044 50%,#ff7a29 50%);
+                box-shadow: 0px 0px 1px white inset;
+                border: solid 1px #ffa800;
+                border-radius: 3px;
+                color: white;
+            }
+            .bot2{
+                background: linear-gradient(to top,#fff629,#efb527 50%,#fff629 50%);
+                box-shadow: 0px 0px 3px white inset;
+                border: solid 1px #ffa800;
+                border-radius: 3px;
+            }
+        }
+        /*上選單動畫區*/
+        .visited1 .li1,.visited2 .li2,.visited3 .li3,.visited4 .li4,.visited5 .li5,.visited6 .li6,.visited7 .li7{
+            box-shadow: 0px 1px 10px rgb(63, 63, 63) inset;
+            background: linear-gradient(to top,#1dd8de,#0084a5);
+            border-bottom: solid 3px #fff02d;
+            color: yellow;
+        }
+    }
+/*跑馬燈*/
+    .mq{
+        height: 40px;
+        background: linear-gradient(to top,#c7c7c7 5%,#f8f8f8 15%,#f8f8f8 82%,#ffffff 90%,#b4b4b4);
+        article{
+        height: 40px;
+            .style{
+                font-size: 14px;
+                line-height: 40px;
+            }
+        }
+    }
+    }
+    /*  */
+    main {
+        padding: 140px 0px 0px 0px;
+    /*主條目*/
+        article{
+            /*圖片輪播*/
+            .banner{
+                width: 1200px;
+                height: 440px;
+                position: relative;
+                @media screen and (-ms-high-contrast: active),(-ms-high-contrast: none){
+                    margin-top: 140px;
+                }
+                /*語言列*/
+                .lang{
+                    width: 124px;
+                    margin: 12px 0px 0px 0px;
+                    position: absolute;
+                    z-index: 100;
+                    .langbot{
+                        display: block;
+                        width: 24px;
+                        height: 24px;
+                        background: url('../images/langic.png') no-repeat center;
+                        position: absolute;
+                        right: 0px;
+                        top: 0px;
+                    }
+                    .langslide{
+                        display: block;
+                        font-size: 14px;
+                        width: 130x;
+                        height: 24px;
+                        background: white;
+                        border-radius: 3px;
+                        border: solid 1px gray;
+                        line-height: 24px;
+                        overflow: hidden;
+                        transition: height 0.5s;
+                        a{
+                            display: block;
+                            width: 120px;
+                            height: 24px;
+                            color: black;
+                            padding: 0px 0px 0px 10px;
+                        }
+                        a:hover{
+                            background: #ff7900;
+                            color: white;
+                        }
+                        span{
+                            padding: 0px 0px 0px 10px;
+                        }
+                    }
+                }
+                .single-item{
+                    width: 1200px;
+                    height: 440px;
+                    margin: 0px auto;
+                    position: relative;
+                    z-index: 1;
+                    .slick-dots{
+                        bottom:15px
+                    }
+                    .slick-dots li button:before{
+                        opacity: 1;
+                        line-height: 23px;
+                    }
+                    .slick-next,.slick-prev{
+                        height: 100px;
+                        width: 55px;
+                        border-radius: 5px;
+                        z-index: 2;
+                    }
+                    .slick-next{
+                        right: 0px;
+                    }
+                    .slick-prev{
+                        left: 0px;
+                    }
+                    .slick-next:hover,.slick-prev:hover{
+                        background: rgba(0,0,0,0.1);
+                    }
+                    .slick-prev:before,.slick-next:before{
+                        font-family: none;
+                        content: "";
+                    }
+                    .slick-active button:before{
+                        width: 20px;
+                        height: 20px;
+                        background: url('../images/dot.png') no-repeat center;
+                        background-size: cover;
+                        color: transparent;
+                        opacity: 1;
+                    }
+                    .banimg1{
+                        margin: 0px auto;
+                        width: 1000px;
+                        height: 440px;
+                        background: url('../images/banimg2.png') no-repeat center; 
+                        background-size: cover;
+                        .banlogo{
+                            width: 1000px;
+                            height: 200px;
+                            background: url('../images/banlogo.png');
+                            position: absolute;
+                            top: 15px;
+                            z-index: 1;
+                        }
+                    }
+                }
+                .banbot1,.banbot2{
+                    width: 55px;
+                    height: 100px;
+                    top: 170px;
+                    position: absolute;
+                    background: rgba(0,0,0,0.2);
+                    border-radius: 5px;
+                    z-index: -1;
+                    cursor: pointer;
+                    &::before{
+                        content: "";
+                        width: 12px;
+                        height: 24px;
+                        position: absolute;
+                        background: url('../images/banic.png');
+                        top: 35%;
+                        left: 40%;
+                    }
+                }
+                .banbot1{
+                    left: 0px;
+                }
+                .banbot2{
+                    right: 0px;
+                    &::before{
+                        transform: scale(-1);
+                    }
+                }
+                /*語言列動畫區*/
+                .langlist .langslide{
+                    height: 100px;
+                }
+            }
+            /*背景插圖*/
+            .bgimg{
+                width: 100%;
+                position: fixed;
+                left: 50%;
+                transform: translateX(-50%);
+                article{
+                    position: relative;
+                    .img1{
+                        width: 398px;
+                        height: 594px;
+                        background: url('../images/imgtest.png') no-repeat;
+                        position: absolute;
+                        left: -355px;
+                        top: -440px;
+                        z-index: -988;
+                        animation: img1 0.5s ease-out;
+                    }
+                    .img2{
+                        width: 310px;
+                        height: 630px;
+                        background: url('../images/img2.png') no-repeat;
+                        position: absolute;
+                        left: -320px;
+                        top: -55px;
+                        animation: img2 0.5s ease-out;
+                    }
+                    .img3{
+                        width: 329px;
+                        height: 504px;
+                        background: url('../images/img3.png') no-repeat;
+                        position: absolute;
+                        right: -350px;
+                        top: -390px;
+                        z-index: -988;
+                        animation: img3 0.5s ease-out;
+                    }
+                    .img4{
+                        width: 308px;
+                        height: 600px;
+                        background: url('../images/img4.png') no-repeat;
+                        position: absolute;
+                        right: -320px;
+                        top: -45px;
+                        animation: img4 0.5s ease-out;
+                    }
+                }
+            }
+            /*下選單*/
+            .mom{
+                width: 1210px;
+                height: 420px;
+                margin: 0px 0px 150px 0px;
+                section{
+                    width: 380px;
+                    height: 185px;
+                    float: left;
+                    margin: 0px 15px 28px 0px;
+                    border: solid 5px white;
+                    position: relative;
+                    box-shadow: 0px 5px 15px gray;
+                    &:nth-child(3){
+                        margin-right: 0px;
+                    }
+                    &:nth-child(6){
+                        margin-right: 0px;
+                    }
+                    a{
+                        display: block;
+                        width: 380px;
+                        height: 185px;
+                        position: absolute;
+                        z-index: 2;
+                        &::before{
+                            content: "";
+                            position: absolute;
+                            width: 380px;
+                            height: 185px;
+                            background: rgba(0,0,0,0.8);
+                            opacity: 0;
+                            transition: all 0.5s;
+                            color: white;
+                            text-align: center;
+                            line-height: 100px;
+                        }
+                        &::after{
+                            content:"立即進入";
+                            position: absolute;
+                            box-shadow: 0px 1px 10px #86fbff inset;
+                            background: linear-gradient(to top,#1cd6dc,#168ab8 50%,#1cd6dc 50%);
+                            width: 160px;
+                            height: 40px;
+                            top: 45%;
+                            left: 20%;
+                            transform: translateX(-50%);
+                            text-align: center;
+                            line-height: 40px;
+                            border-radius: 5px;
+                            transition: all 0.5s;
+                            opacity: 0;
+                            color: white;
+                        }
+                        a:hover:before{
+                            opacity: 1;
+                        }
+                        a:hover:after{
+                            opacity: 1;
+                            left: 50%;
+                        }
+                    }
+                }
+                .son1{
+                    background: url('../images/sbg1.png') no-repeat center;
+                    background-size: cover;
+                    .simg1{
+                        width: 334px;
+                        height: 198px;
+                        background: url('../images/simg1.png') no-repeat top center;
+                        background-size: 100%;
+                        position: absolute;
+                        top: -18px;
+                        left: 23px;
+                        transition: transform 0.5s;
+                        z-index: 2;
+                    }
+                    a:before{
+                        content: "體育賽事";
+                    }
+                    a:hover:before{
+                        opacity: 1;
+                    }
+                    a:hover:after{
+                        opacity: 1;
+                        left: 50%;
+                    }
+                }
+                .son2{
+                    background: url('../images/sbg2.png') no-repeat center;
+                    background-size: cover;
+                    .simg2{
+                        width: 388px;
+                        height: 197px;
+                        background: url('../images/simg2.png') no-repeat center;
+                        background-size: 100%;
+                        position: absolute;
+                        top: -12px;
+                        transition: transform 0.5s;
+                    }
+                    a:before{
+                        content: "真人遊戲";
+                    }
+                    a:hover:before{
+                        opacity: 1;
+                    }
+                    a:hover:after{
+                        opacity: 1;
+                        left: 50%;
+                    }
+                }
+                .son3{
+                    background: url('../images/sbg3.png') no-repeat center;
+                    background-size: cover;
+                    .simg3{
+                        width: 404px;
+                        height: 197px;
+                        background: url('../images/simg3.png') no-repeat center;
+                        background-size: 100%;
+                        position: absolute;
+                        top: -13px;
+                        left: -10px;
+                        transition: transform 0.5s;
+                    }
+                    a:before{
+                        content: "老虎機";
+                    }
+                    a:hover:before{
+                        opacity: 1;
+                    }
+                    a:hover:after{
+                        opacity: 1;
+                        left: 50%;
+                    }
+                }
+                .son4{
+                    background: url('../images/sbg4.png') no-repeat center;
+                    background-size: cover;
+                    .simg4{
+                        width: 346px;
+                        height: 197px;
+                        background: url('../images/simg4.png') no-repeat center;
+                        background-size: 100%;
+                        position: absolute;
+                        left: 17px;
+                        top: -13px;
+                        transition: transform 0.5s;
+                    }
+                    a:before{
+                        content: "彩票";
+                    }
+                    a:hover:before{
+                        opacity: 1;
+                    }
+                    a:hover:after{
+                        opacity: 1;
+                        left: 50%;
+                    }
+                }
+                .son5{
+                    background: url('../images/sbg5.png') no-repeat center;
+                    background-size: cover;
+                    .simg5{
+                        width: 380px;
+                        height: 205px;
+                        background: url('../images/simg5.png') no-repeat center;
+                        background-size: 100%;
+                        position: absolute;
+                        left: 16px;
+                        top: -16px;
+                        transition: transform 0.5s;
+                    }
+                    a:before{
+                        content: "捕魚機";
+                    }
+                    a:hover:before{
+                        opacity: 1;
+                    }
+                    a:hover:after{
+                        opacity: 1;
+                        left: 50%;
+                    }
+                }
+                .son6{
+                    background: url('../images/sbg6.png') no-repeat center;
+                    background-size: cover;
+                    .simg6{
+                        width: 380px;
+                        height: 181px;
+                        background: url('../images/simg6.png') no-repeat center;
+                        background-size: 100%;
+                        position: absolute;
+                        transition: transform 0.5s;
+                    }
+                    a:before{
+                        content: "棋牌遊戲";
+                    }
+                    a:hover:before{
+                        opacity: 1;
+                    }
+                    a:hover:after{
+                        opacity: 1;
+                        left: 50%;
+                    }
+                }
+            }
+            /*下選單動畫區*/
+            .hidden1 .son1,.hidden2 .son2,.hidden3 .son3,.hidden4 .son4,.hidden5 .son5,.hidden6 .son6{
+                overflow: hidden;
+            }
+            .hidden1 .son1 .simg1,.hidden2 .son2 .simg2,.hidden3 .son3 .simg3,.hidden4 .son4 .simg4,.hidden5 .son5 .simg5,.hidden6 .son6 .simg6{
+                transform: scale(1.2);
+            }
+        }
+    /*右側項目*/
+        aside{
+            width: 50px;
+            height: 200px;
+            position: fixed;
+            right: 0px;
+            top: 230px;
+            z-index: 100;
+            a{
+                display: block;
+                width: 200px;
+                height: 45px;
+                background: linear-gradient(to top,#0284c0,#16c8d6 50%);
+                position: absolute;
+                left: 0px;
+                transition: left 0.5s 0s;
+                box-shadow: 0px 5px 10px gray,0px 1px 3px gray inset;
+                border-radius: 5px;
+                color: white;
+                font-size: 18px;
+                text-align: center;
+                line-height: 45px;
+            }
+            a:hover{
+                left: -100px;
+            }
+            .r1{
+                top:0px;
+                &::before{
+                    content: "";
+                    width: 25px;
+                    height: 25px;
+                    background: url('../images/ic1.png') no-repeat;
+                    position: absolute;
+                    left: 15px;
+                    top: 10px;
+                }
+            }
+            .r2{
+                top: 60px;
+                &::before{
+                    content: "";
+                    width: 25px;
+                    height: 25px;
+                    background: url('../images/ic2.png') no-repeat;
+                    position: absolute;
+                    left: 15px;
+                    top: 10px;
+                }
+            }
+            .r3{
+                top: 120px;
+                &::before{
+                    content: "";
+                    width: 25px;
+                    height: 25px;
+                    background: url('../images/ic3.png') no-repeat;
+                    position: absolute;
+                    left: 15px;
+                    top: 10px;
+                }
+            }
+        }
+    }
+    /*  */
+    footer{
+        width: 100%;
+        position: relative;
+        background: linear-gradient(to top,#0084a5,#1dd8de);
+        height: 50px;
+        box-shadow: 0px 0px 3px #60f8ff inset,0px 0px 5px gray;
+        z-index: 100;
+        /*底層選單*/
+        ul{
+            width: 800px;
+            margin: 0px auto;
+            li{
+                display: inline-block;
+                width: 106px;
+                height: 50px;
+                border-left: solid 1px #52d2e3;
+                text-align: center;
+                a{
+                    display: block;
+                    width: 110px;
+                    height: 50px;
+                    color: white;
+                    line-height: 50px;
+                    font-size: 18px;
+                }
+                a:hover{
+                    box-shadow: 0px 1px 10px rgb(63, 63, 63) inset;
+                    background: linear-gradient(to top,#0cc7cd,#0084a5 74%);
+                }
+            }
+        }
+        /*底層字*/
+        .foot2{
+            width: 100%;
+            height: 100px;
+            background: linear-gradient(to top,#e4e4e6 0%,#d8d9d9 50%,#edeeef 50%);
+            text-align: center;
+            span{
+                border-left: solid 2px gray;
+                padding: 2px 15px;
+                line-height: 40px;
+                height: 50px;
+                font-weight: 550;
+                color: #515151;
+                &:first-child{
+                    border: none;
+                }
+            }
+            p{
+                color: #808080;
+                font-weight: 550;
+                line-height: 18px;
+            }
+        }
+        /*底層選單動畫*/
+        .visited1 .fli1,.visited2 .fli2,.visited3 .fli3,.visited4 .fli4,.visited5 .fli5,.visited6 .fli6,.visited7 .fli7{
+            box-shadow: 0px 1px 10px rgb(63, 63, 63) inset;
+            background: linear-gradient(to top,#0cc7cd,#0084a5 74%);
+        }
+    }
+}
+    /*bgimg動畫區*/
+@keyframes img1{
+    0%{
+        opacity: 0;
+        left: -540px;
+        top: -900px;
+    }
+    100%{
+    }
+}
+@keyframes img2{
+    0%{
+        opacity: 0;
+        left: -540px;
+        top: 500px;
+    }
+    100%{
+    }
+}
+@keyframes img3{
+    0%{
+        opacity: 0;
+        right: -540px;
+        top: -600px;
+    }
+    100%{
+    }
+}
+@keyframes img4{
+    0%{
+        opacity: 0;
+        right: -940px;
+    }
+    100%{
+    }
+}
