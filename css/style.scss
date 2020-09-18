@@ -103,7 +103,6 @@ body {
             margin: 0px auto;
             float: left;
             position: relative;
-            background-color: powderblue;
             &::after{
                 position: absolute;
                 content: "";
@@ -115,7 +114,6 @@ body {
                 z-index: -5;
                 @media not all and (min-resolution:.001dpcm){ @supports (-webkit-appearance:none){
                     margin-top: -40px;
-                    background-color: powderblue;
                 }}
             }
             li{
