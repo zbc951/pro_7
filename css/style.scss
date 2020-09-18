@@ -103,7 +103,6 @@ body {
             margin: 0px auto;
             float: left;
             position: relative;
-            background-color: peru;
             &::after{
                 position: absolute;
                 content: "";
@@ -113,9 +112,9 @@ body {
                 background-size: cover;
                 left: -57px;
                 z-index: -5;
-                @supports (overflow:-webkit-marquee) and (justify-content:inherit){
-                    margin-top: -90px;
-                }
+                @media not all and (min-resolution:.001dpcm){ @supports (-webkit-appearance:none){
+                    margin-top: 250px;
+                }}
             }
             li{
                 display: inline-block;

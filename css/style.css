@@ -110,8 +110,7 @@ body {
         height: 80px;
         margin: 0px auto;
         float: left;
-        position: relative;
-        background-color: peru; }
+        position: relative; }
         body header article ul::after {
           position: absolute;
           content: "";
@@ -121,9 +120,10 @@ body {
           background-size: cover;
           left: -57px;
           z-index: -5; }
-          @supports (overflow: -webkit-marquee) and (justify-content: inherit) {
-            body header article ul::after {
-              margin-top: -90px; } }
+          @media not all and (min-resolution: 0.001dpcm) {
+            @supports (-webkit-appearance: none) {
+              body header article ul::after {
+                margin-top: 250px; } } }
         body header article ul li {
           display: inline-block;
           width: 76px;
