@@ -110,8 +110,7 @@ body {
         height: 80px;
         margin: 0px auto;
         float: left;
-        position: relative;
-        background-color: purple; }
+        position: relative; }
         body header article ul::after {
           position: absolute;
           content: "";
@@ -124,7 +123,7 @@ body {
           @media not all and (min-resolution: 0.001dpcm) {
             @supports (-webkit-appearance: none) {
               body header article ul::after {
-                margin-top: -40px; } } }
+                margin-top: -20px; } } }
         body header article ul li {
           display: inline-block;
           width: 76px;
