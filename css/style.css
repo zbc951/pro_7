@@ -124,7 +124,8 @@ body {
           @media not all and (min-resolution: 0.001dpcm) {
             @supports (-webkit-appearance: none) {
               body header article ul::after {
-                margin-top: -140px; } } }
+                margin-top: -140px;
+                background-color: pink; } } }
         body header article ul li {
           display: inline-block;
           width: 76px;
