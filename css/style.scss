@@ -98,7 +98,7 @@ body {
         }
         /*上選單*/
         ul{
-            width: 565px;
+            width: 600px;
             height: 80px;
             margin: 0px auto;
             float: left;
@@ -113,7 +113,7 @@ body {
                 left: -57px;
                 z-index: -5;
                 @media not all and (min-resolution:.001dpcm){ @supports (-webkit-appearance:none){
-                    margin-top: 250px;
+                    margin-top: -40px;
                 }}
             }
             li{
