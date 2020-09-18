@@ -120,8 +120,10 @@ body {
           background: url("../images/topbg.png");
           background-size: cover;
           left: -57px;
-          z-index: -5;
-          margin-top: 50px; }
+          z-index: -5; }
+          @supports (overflow: -webkit-marquee) and (justify-content: inherit) {
+            body header article ul::after {
+              margin-top: 90px; } }
         body header article ul li {
           display: inline-block;
           width: 76px;

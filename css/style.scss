@@ -113,7 +113,9 @@ body {
                 background-size: cover;
                 left: -57px;
                 z-index: -5;
-                margin-top: 50px;
+                @supports (overflow:-webkit-marquee) and (justify-content:inherit){
+                    margin-top: 90px;
+                }
             }
             li{
                 display: inline-block;
