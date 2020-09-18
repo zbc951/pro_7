@@ -39,9 +39,6 @@ html{
     background: white;
     box-sizing: border-box;
     margin: 0px auto;
-    @media all and (-webkit-min-device-pixel-ratio:0){
-        font-size:14px;
-    }
 }
 a:link{
     text-decoration: none;
@@ -184,6 +181,9 @@ body {
                 font-size: 16px;
                 outline: none;
                 cursor: pointer;
+                @media all and (-webkit-min-device-pixel-ratio:0){
+                    font-size:14px;
+                }
                 /*for IE*/
                 @media screen and (-ms-high-contrast: active),(-ms-high-contrast: none){
                     font-size: 14px;

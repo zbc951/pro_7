@@ -40,9 +40,6 @@ html {
   -webkit-box-sizing: border-box;
   box-sizing: border-box;
   margin: 0px auto; }
-  @media all and (-webkit-min-device-pixel-ratio: 0) {
-    html {
-      font-size: 14px; } }
 
 a:link {
   text-decoration: none; }
@@ -187,6 +184,9 @@ body {
           outline: none;
           cursor: pointer;
           /*for IE*/ }
+          @media all and (-webkit-min-device-pixel-ratio: 0) {
+            body header article nav .bot1, body header article nav .bot2 {
+              font-size: 14px; } }
           @media screen and (-ms-high-contrast: active), (-ms-high-contrast: none) {
             body header article nav .bot1, body header article nav .bot2 {
               font-size: 14px; } }
