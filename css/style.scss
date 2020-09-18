@@ -39,6 +39,9 @@ html{
     background: white;
     box-sizing: border-box;
     margin: 0px auto;
+    @media all and (-webkit-min-device-pixel-ratio:0){
+        font-size:14px;
+    }
 }
 a:link{
     text-decoration: none;
