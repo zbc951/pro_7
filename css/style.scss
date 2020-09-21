@@ -189,6 +189,7 @@ body {
                     }
                 /*for Safari*/
                 @media not all and (min-resolution:.001dpcm){ @supports (-webkit-appearance:none){
+                    font-size: 12px;
                 }}
                 /*for FireFox*/
                 @media screen and (min--moz-device-pixel-ratio:0){
