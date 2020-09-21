@@ -124,6 +124,9 @@ body {
                 text-align: center;
                 border-left: solid 1px #52d2e3;
                 margin: 20px 0px 0px 0px;
+                &:first-child {
+                    border: none;
+                }
                 a{
                     display: block;
                     width: 80px;
@@ -149,10 +152,10 @@ body {
             float: right;
             position: relative;
             z-index: 50;
-            span,input{
+            span,input {
                 float: right;
             }
-            input{
+            input {
                 margin: 8px 0px 0px 0px;
                 width: 135px;
                 height: 19px;
@@ -162,7 +165,7 @@ body {
                 padding: 3px 0px 3px 5px;
                 font-size: 14px;
             }
-            span{
+            span {
                 margin: 13px 5px 0px 5px;
                 font-size: 16px;
                 color: white;
@@ -189,7 +192,7 @@ body {
                     }
                 /*for Safari*/
                 @media not all and (min-resolution:.001dpcm){ @supports (-webkit-appearance:none){
-                    font-size: 12px;
+                    font-size: 10px;
                 }}
                 /*for FireFox*/
                 @media screen and (min--moz-device-pixel-ratio:0){
@@ -203,17 +206,17 @@ body {
                 border-radius: 3px;
                 color: white;
             }
-            .bot1:hover{
+            .bot1:hover {
                 background: linear-gradient(to top,#ffa044,#ff7a29 24%,#fc5f00);
                 box-shadow: 0px 5px 5px #ac1400 inset;
             }
-            .bot2{
+            .bot2 {
                 background: linear-gradient(to top,#fff629,#efb527 50%,#fff629 50%);
                 box-shadow: 0px 0px 3px white inset;
                 border: solid 1px #ffa800;
                 border-radius: 3px;
             }
-            .bot2:hover{
+            .bot2:hover {
                 background: linear-gradient(to top,#fae49e,#fff629 21%,#efb527);
                 box-shadow: 0px 3px 5px #f18b27 inset;
             }
@@ -224,6 +227,9 @@ body {
             background: linear-gradient(to top,#1dd8de,#0084a5);
             border-bottom: solid 3px #fff02d;
             color: yellow;
+        }
+        .visited1 li:nth-child(2),.visited2 li:nth-child(2),.visited2 li:nth-child(3),.visited3 li:nth-child(3),.visited3 li:nth-child(4),.visited4 li:nth-child(4),.visited4 li:nth-child(5),.visited5 li:nth-child(5),.visited5 li:nth-child(6),.visited6 li:nth-child(6),.visited6 li:nth-child(7),.visited7 li:nth-child(7){
+            border: none;
         }
     }
 /*跑馬燈*/
@@ -300,6 +306,10 @@ body {
                     margin: 0px auto;
                     position: relative;
                     z-index: 1;
+                    outline: none;
+                    a {
+                        outline: none;
+                    }
                     .slick-dots{
                         bottom:15px
                     }
@@ -427,7 +437,6 @@ body {
             .mom{
                 width: 1210px;
                 height: 420px;
-                margin: 0px 0px 150px 0px;
                 section{
                     width: 380px;
                     height: 185px;
@@ -711,9 +720,11 @@ body {
         height: 50px;
         box-shadow: 0px 0px 3px #60f8ff inset,0px 0px 5px gray;
         z-index: 100;
+        margin-top: 100px;
         /*底層選單*/
         ul{
             width: 800px;
+            height: 50px;
             margin: 0px auto;
             li{
                 display: inline-block;
@@ -721,6 +732,9 @@ body {
                 height: 50px;
                 border-left: solid 1px #52d2e3;
                 text-align: center;
+                &:first-child {
+                    border: none;
+                }
                 a{
                     display: block;
                     width: 110px;
@@ -762,6 +776,9 @@ body {
         .visited1 .fli1,.visited2 .fli2,.visited3 .fli3,.visited4 .fli4,.visited5 .fli5,.visited6 .fli6,.visited7 .fli7{
             box-shadow: 0px 1px 10px rgb(63, 63, 63) inset;
             background: linear-gradient(to top,#0cc7cd,#0084a5 74%);
+        }
+        .visited1 li:nth-child(2),.visited2 li:nth-child(2),.visited2 li:nth-child(3),.visited3 li:nth-child(3),.visited3 li:nth-child(4),.visited4 li:nth-child(4),.visited4 li:nth-child(5),.visited5 li:nth-child(5),.visited5 li:nth-child(6),.visited6 li:nth-child(6),.visited6 li:nth-child(7),.visited7 li:nth-child(7){
+            border: none;
         }
     }
 }

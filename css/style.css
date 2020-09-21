@@ -130,6 +130,8 @@ body {
           text-align: center;
           border-left: solid 1px #52d2e3;
           margin: 20px 0px 0px 0px; }
+          body header article ul li:first-child {
+            border: none; }
           body header article ul li a {
             display: block;
             width: 80px;
@@ -193,7 +195,7 @@ body {
           @media not all and (min-resolution: 0.001dpcm) {
             @supports (-webkit-appearance: none) {
               body header article nav .bot1, body header article nav .bot2 {
-                font-size: 12px; } } }
+                font-size: 10px; } } }
           @media screen and (min--moz-device-pixel-ratio: 0) {
             body header article nav .bot1, body header article nav .bot2 {
               font-size: 14px; } }
@@ -239,6 +241,8 @@ body {
         background: linear-gradient(to top, #1dd8de, #0084a5);
         border-bottom: solid 3px #fff02d;
         color: yellow; }
+      body header article .visited1 li:nth-child(2), body header article .visited2 li:nth-child(2), body header article .visited2 li:nth-child(3), body header article .visited3 li:nth-child(3), body header article .visited3 li:nth-child(4), body header article .visited4 li:nth-child(4), body header article .visited4 li:nth-child(5), body header article .visited5 li:nth-child(5), body header article .visited5 li:nth-child(6), body header article .visited6 li:nth-child(6), body header article .visited6 li:nth-child(7), body header article .visited7 li:nth-child(7) {
+        border: none; }
     body header .mq {
       height: 40px;
       background: -webkit-gradient(linear, left bottom, left top, color-stop(5%, #c7c7c7), color-stop(15%, #f8f8f8), color-stop(82%, #f8f8f8), color-stop(90%, #ffffff), to(#b4b4b4));
@@ -310,7 +314,10 @@ body {
           height: 440px;
           margin: 0px auto;
           position: relative;
-          z-index: 1; }
+          z-index: 1;
+          outline: none; }
+          body main article .banner .single-item a {
+            outline: none; }
           body main article .banner .single-item .slick-dots {
             bottom: 15px; }
           body main article .banner .single-item .slick-dots li button:before {
@@ -419,8 +426,7 @@ body {
             animation: img4 0.5s ease-out; }
       body main article .mom {
         width: 1210px;
-        height: 420px;
-        margin: 0px 0px 150px 0px; }
+        height: 420px; }
         body main article .mom section {
           width: 380px;
           height: 185px;
@@ -696,11 +702,13 @@ body {
     -webkit-box-shadow: 0px 0px 3px #60f8ff inset,0px 0px 5px gray;
     box-shadow: 0px 0px 3px #60f8ff inset,0px 0px 5px gray;
     z-index: 100;
+    margin-top: 100px;
     /*底層選單*/
     /*底層字*/
     /*底層選單動畫*/ }
     body footer ul {
       width: 800px;
+      height: 50px;
       margin: 0px auto; }
       body footer ul li {
         display: inline-block;
@@ -708,6 +716,8 @@ body {
         height: 50px;
         border-left: solid 1px #52d2e3;
         text-align: center; }
+        body footer ul li:first-child {
+          border: none; }
         body footer ul li a {
           display: block;
           width: 110px;
@@ -750,6 +760,8 @@ body {
       background: -webkit-linear-gradient(bottom, #0cc7cd, #0084a5 74%);
       background: -o-linear-gradient(bottom, #0cc7cd, #0084a5 74%);
       background: linear-gradient(to top, #0cc7cd, #0084a5 74%); }
+    body footer .visited1 li:nth-child(2), body footer .visited2 li:nth-child(2), body footer .visited2 li:nth-child(3), body footer .visited3 li:nth-child(3), body footer .visited3 li:nth-child(4), body footer .visited4 li:nth-child(4), body footer .visited4 li:nth-child(5), body footer .visited5 li:nth-child(5), body footer .visited5 li:nth-child(6), body footer .visited6 li:nth-child(6), body footer .visited6 li:nth-child(7), body footer .visited7 li:nth-child(7) {
+      border: none; }
 
 /*bgimg動畫區*/
 @-webkit-keyframes img1 {
