@@ -190,10 +190,6 @@ body {
           @media screen and (-ms-high-contrast: active), (-ms-high-contrast: none) {
             body header article nav .bot1, body header article nav .bot2 {
               font-size: 14px; } }
-          @media not all and (min-resolution: 0.001dpcm) {
-            @supports (-webkit-appearance: none) {
-              body header article nav .bot1, body header article nav .bot2 {
-                font-size: 10px; } } }
           @media screen and (min--moz-device-pixel-ratio: 0) {
             body header article nav .bot1, body header article nav .bot2 {
               font-size: 14px; } }
